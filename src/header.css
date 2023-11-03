@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: rgb(57, 183, 169);
+    color: white;
+  }
+  
+  .navigation a {
+    margin-right: 170px;
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+    
+  }

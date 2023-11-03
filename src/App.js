@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import SignupForm from './signup';
+import LoginForm from './signin'; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import Header from './header';
+import PostItems from './todo_post';
+import ItemList from './todo_get';
+import DeleteItem from './todo_delete';
+import UpdateItem from './todo_update';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+      <Header />
+        <Routes> 
+          <Route path="/login" element={<LoginForm />} /> 
+          <Route path="/" element={<SignupForm />} /> 
+          <Route path="/post" element={<PostItems />} />
+          <Route path="/get" element={<ItemList />} />
+          <Route path="/delete" element={<DeleteItem />} />
+          <Route path="/update" element={<UpdateItem />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

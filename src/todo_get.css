@@ -1,0 +1,23 @@
+.item-list {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
